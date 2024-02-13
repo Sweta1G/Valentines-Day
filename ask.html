@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./ask.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Here, I bring you my heart filled with lots and lots of love only for you! ʚ♡ɞ <br> Do you love me too &#129402?
+                <br>And Will you buy me Chocolates and cute Dresses?</h1>
+                <!-- <h1 class = "header_text">Do you love me too &#129402?</h1> -->
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage1()">For sure babe!<br>I love youu smm</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton() ">No &#128542 <br> <p id="lol">.</p></button>
+                <script>
+
+                    function nextPage1() {
+                        window.location.href = "loader.html";
+                        
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
+
+<!-- ♾ -->
